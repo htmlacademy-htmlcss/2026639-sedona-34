@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Александр Белостоцкий](https://up.htmlacademy.ru/htmlcss/34/user/2026639).
-* Наставник: `Неизвестно`.
+* Наставник: [Roman Zheltov] (https://htmlacademy.ru/profile/id1145037).
 
 ---
 
