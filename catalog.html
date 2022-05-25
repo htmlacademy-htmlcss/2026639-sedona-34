@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>HTML Academy: Гостиницы Седоны</title>
   </head>
 
   <body>
@@ -37,7 +37,7 @@
                 Избранные гостиницы
               </span>
             </a>
-            <p class="visually-hidden">В избранном<span class="favorites-counter">
+            <p class="visually-hidden">В избранном <span class="favorites-counter">
               12</span> гостиниц</p>
           </li>
           <li class="navigation-item">
@@ -52,86 +52,87 @@
     <main class="main-catalog">
       <header class="catalog-header">
         <h1>Гостиницы Седоны</h1>
-      </header>
 
       <ul class="breadcrumbs">
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">
-              <span class="visually-hidden">Главная<span>
-            </a>
-          </li>
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Гостиницы</a>
-          </li>
-        </ul>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="index.html">
+            <span class="visually-hidden">Главная<span>
+          </a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link">Гостиницы</a>
+        </li>
+      </ul>
+      </header>
 
-        <section class="filter-set">
-          <h2 class="visually-hidden">Фильтры для поиска гостиниц</h2>
-          <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+      <section class="filter-set">
+        <h2 class="visually-hidden">Фильтры для поиска гостиниц</h2>
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
 
-              <fieldset class="catalog-filter-group">
-                <legend class="catalog-filter-infrastructure">Инфраструктура:</legend>
-                <ul class="catalog-filter-infrastructure-list">
-                  <li class="catalog-filter-infrastructure-item">
-                    <label class="control">
-                    <input class="control-input" type="checkbox" name="swimming-pool" checked>
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-infrastructure">Инфраструктура:</legend>
+              <ul class="catalog-filter-infrastructure-list">
+                <li class="catalog-filter-infrastructure-item">
+                  <label class="control">
+                  <input class="control-input" type="checkbox" name="swimming-pool" checked>
                     Бассейн
-                    </label>
-                  </li>
-                  <li class="catalog-filter-infrastructure-item">
-                    <label class="control">
-                    <input class="control-input" type="checkbox" name="parking" checked>
+                  </label>
+                </li>
+                <li class="catalog-filter-infrastructure-item">
+                  <label class="control">
+                  <input class="control-input" type="checkbox" name="parking" checked>
                     Парковка
-                    </label>
-                  </li>
-                  <li class="catalog-filter-infrastructure-item">
-                    <label class="control">
-                    <input class="control-input" type="checkbox" name="wi-fi">
+                  </label>
+                </li>
+                <li class="catalog-filter-infrastructure-item">
+                  <label class="control">
+                  <input class="control-input" type="checkbox" name="wi-fi">
                     Wi-Fi
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
 
-              <fieldset class="catalog-filter-group">
-                <legend class="catalog-filter-type">Тип жилья:</legend>
-                <ul class="catalog-filter-type-list">
-                  <li class="catalog-filter-type-item">
-                    <label class="control">
-                    <input class="control-input" type="radio" name="type" value="hotel" checked>
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-type">Тип Жилья:</legend>
+              <ul class="catalog-filter-type-list">
+                <li class="catalog-filter-type-item">
+                  <label class="control">
+                  <input class="control-input" type="radio" name="type" value="hotel" checked>
                     Гостиница
-                    </label>
-                  </li>
-                  <li class="catalog-filter-type-item">
-                    <label class="control">
-                    <input class="control-input" type="radio" name="type" value="motel">
+                  </label>
+                </li>
+                <li class="catalog-filter-type-item">
+                  <label class="control">
+                  <input class="control-input" type="radio" name="type" value="motel">
                     Мотель
-                    </label>
-                  </li>
-                  <li class="catalog-filter-type-item">
-                    <label class="control">
-                    <input class="control-input" type="radio" name="type" value="apartments">
+                  </label>
+                </li>
+                <li class="catalog-filter-type-item">
+                  <label class="control">
+                  <input class="control-input" type="radio" name="type" value="apartments">
                     Апартаменты
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
 
-              <fieldset class="catalog-filter-group">
-                <legend class="catalog-filter-cost">Стоимость,  &#8381:</legend>
-              </fieldset>
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-cost">Стоимость,  &#8381:</legend>
+            </fieldset>
 
-              <button class="apply-button" type="submit">Применить</button>
-              <button class="reset-button" type="reset">Сбросить</button>
-          </form>
-        </section>
+            <button class="apply-filter-button" type="submit">Применить</button>
+            <button class="reset-filter-button" type="reset">Сбросить</button>
+        </form>
+      </section>
 
-        <section class="filter-result">
+      <section class="filter-result">
+        <div class="display-control">
           <h2>Найдено гостиниц: <span class="result-counter">38</span></h2>
           <select class="select-control" aria-label="Сортировка">
-            <option value="popular">Сначала популярные</option>
             <option value="cheap">Сначала дешёвые</option>
             <option value="expensive">Сначала дорогие</option>
+            <option value="popular">Сначала популярные</option>
           </select>
           <a href="#" class="select-button select-button-current">
             <span class="visually-hidden">Показать таблицей</span>
@@ -142,6 +143,8 @@
           <a class="select-button" href="#">
             <span class="visually-hidden">Показать списком</span>
           </a>
+        </div>
+
 
           <ul class="result-list">
             <li class="result-item">
@@ -151,7 +154,7 @@
               </a>
               <span class="result-item-type">Гостиница</span>
               <b class="result-item-price">От 4000 &#8381</b>
-              <a class="result-item-button button" href="#">Подробнее</a>
+              <a class="result-item-button" href="#">Подробнее</a>
               <button слass="to-favorites-button" type="button" name="button">
                 В избранное
               </button>
@@ -172,7 +175,7 @@
               </a>
               <span class="result-item-type">Гостиница</span>
               <b class="result-item-price">От 5000 &#8381</b>
-              <a class="result-item-button button" href="#">Подробнее</a>
+              <a class="result-item-button" href="#">Подробнее</a>
               <button слass="to-favorites-button already-favorites" type="button" name="button">
                 В избранном
               </button>
@@ -193,7 +196,7 @@
               </a>
               <span class="result-item-type">Гостиница</span>
               <b class="result-item-price">От 2500 &#8381</b>
-              <a class="result-item-button button" href="#">Подробнее</a>
+              <a class="result-item-button" href="#">Подробнее</a>
               <button слass="to-favorites-button" type="button" name="button">
                 В избранное
               </button>
@@ -214,7 +217,7 @@
               </a>
               <span class="result-item-type">Гостиница</span>
               <b class="result-item-price">От 1500 &#8381</b>
-              <a class="result-item-button button" href="#">Подробнее</a>
+              <a class="result-item-button" href="#">Подробнее</a>
               <button слass="to-favorites-button" type="button" name="button">
                 В избранное
               </button>
@@ -228,52 +231,52 @@
               <p class="rating">Рейтинг: <span class="rating-value">5,0</span></p>
             </li>
           </ul>
-
-          <ul class="pagination">
-            <li class="pagination-item">
-              <a class="pagination-link pagination-current">1</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">2</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">3</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">4</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">...</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">10</a>
-            </li>
-          </ul>
-          <label for="result-quantity">Гостиниц на странице:</label>
-          <select class="select-quantity" id="result-quantity" aria-label="Количество результатов">
-            <option value="4">4</option>
-            <option value="10">10</option>
-            <option value="50">50</option>
-          </select>
+          <div class="pagination-display-control">
+            <ul class="pagination">
+              <li class="pagination-item">
+                <a class="pagination-link pagination-current">1</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">2</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">3</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">4</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">...</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">10</a>
+              </li>
+            </ul>
+            <label for="result-quantity">Гостиниц на странице:</label>
+            <select class="select-quantity" id="result-quantity" aria-label="Количество результатов">
+              <option value="4">4</option>
+              <option value="10">10</option>
+              <option value="50">50</option>
+            </select>
+          </div>
         </section>
-
     </main>
 
     <footer class="page-footer">
       <h2 class="visually-hidden">Связь с нами</h2>
       <ul class="footer-social-list">
       <li class="footer-social-item">
-        <a class="button" href="https://vk.com/htmlacademy">
+        <a class="social-button" href="https://vk.com/htmlacademy">
           <span class="visually-hidden">ВКонтакте</span>
         </a>
       </li>
       <li class="footer-social-item">
-        <a class="button" href="https://t.me/htmlacademy">
+        <a class="social-button" href="https://t.me/htmlacademy">
           <span class="visually-hidden">Telegram</span>
         </a>
       </li>
       <li class="footer-social-item">
-        <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+        <a class="social-button" href="https://www.youtube.com/user/htmlacademyru">
           <span class="visually-hidden">YouTube</span>
         </a>
       </li>
