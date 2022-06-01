@@ -28,6 +28,23 @@ li {
   list-style: none;
 }
 
+/* Оставлено до момента,
+когда нам объяснят,
+что с этим классом
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+*/
+
 .page-header {
   background-color: #ffffff;
 }
@@ -38,6 +55,14 @@ li {
   font-weight: 700;
   color: #000000;
   text-decoration: none;
+}
+
+.search-button {
+  background: url("../images/search.svg") no-repeat;
+}
+
+.favorites-button {
+  background: url("../images/favorites.svg") no-repeat;
 }
 
 .favorites-counter {
@@ -68,13 +93,17 @@ li {
 
 .welcome-container {
   background-color: #334551;
+  background-image: url("../images/index/welcome-background.jpg");
+  background-size: 1200px 485px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .about-container {
   background-color: #ffffff;
 }
 
-h2 {
+.advantages h2 {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -82,14 +111,14 @@ h2 {
   text-transform: uppercase;
 }
 
-p {
+.advantages p, .find-hotel p, .subscribe p {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
 }
 
-.advantages-item h3, h5 {
+.advantages-item h3, .features-item h5 {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -117,6 +146,37 @@ p {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
+.features-item:nth-child(1) {
+  background-image: url("../images/index/accomodation-icon.svg");
+  background-size: 75px 72px;
+  background-repeat: no-repeat;
+  background-position: center 80px;
+}
+
+.features-item:nth-child(2) {
+  background-image: url("../images/index/food-icon.svg");
+  background-size: 74px 70px;
+  background-repeat: no-repeat;
+  background-position: center 81px;
+}
+
+.features-item:nth-child(3) {
+  background-image: url("../images/index/souvenires-icon.svg");
+  background-size: 64px 76px;
+  background-repeat: no-repeat;
+  background-position: center 78px;
+}
+
+.features-item h5 {
+  padding: 0px;
+  margin: 0px;
+  padding-top: 182px;
+}
+
+.features-item p {
+  margin-top: 30px;
+}
+
 .find-hotel {
   background-color: #ffffff;
 }
@@ -136,9 +196,13 @@ p {
 .subscribe {
   background-color: #4a6e80;
   color: #ffffff;
+  background-image: url("../images/index/subscribe-background.jpg");
+  background-size: 1200px 411px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-input {
+.subscribe input {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -155,6 +219,18 @@ input {
   border: none;
 }
 
+.footer-social-item:nth-child(1) .social-button {
+  background: url("../images/vk-logo.svg") no-repeat;
+}
+
+.footer-social-item:nth-child(2) .social-button {
+  background: url("../images/tg-logo.svg") no-repeat;
+}
+
+.footer-social-item:nth-child(3) .social-button {
+  background: url("../images/yt-logo.svg") no-repeat;
+}
+
 .footer-phone {
   font-weight: 400;
   font-size: 40px;
@@ -163,12 +239,18 @@ input {
   color: #000000;
 }
 
+/* catalog only below */
+
 .header-filter-container {
   background-color: #3a6488;
   color: #ffffff;
+  background-image: url("../images/catalog/filter-background.jpg");
+  background-size: 1200px 403px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-h1 {
+.catalog-header h1 {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
@@ -178,6 +260,10 @@ h1 {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
+}
+
+.breadcrumbs-item:nth-child(1) {
+  background: url("../images/catalog/breadcrumbs-home.svg") no-repeat;
 }
 
 .breadcrumbs-item:not(:nth-of-type(1)) {
@@ -251,6 +337,27 @@ h1 {
 
 .select-button-current {
   border: 2px solid #000000;
+}
+
+.select-button:nth-child(1) {
+  background-image: url("../images/catalog/table–icon.svg");
+  background-size: 16px 14px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.select-button:nth-child(2) {
+  background-image: url("../images/catalog/slideshow–icon.svg");
+  background-size: 16px 14px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.select-button:nth-child(3) {
+  background-image: url("../images/catalog/list-icon.svg");
+  background-size: 16px 14px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .result-item-title {
@@ -344,4 +451,10 @@ h1 {
   height: 49px;
   background-position: 128px;
   padding-left: 20px;
+}
+
+.catalog-subscribe {
+  background-color: inherit;
+  color: #000000;
+  background-image: none;
 }

@@ -132,15 +132,17 @@
             <option value="expensive">Сначала дорогие</option>
             <option value="popular">Сначала популярные</option>
           </select>
-          <a class="select-button select-button-current" href="#">
-            <span class="visually-hidden">Показать таблицей</span>
-          </a>
-          <a class="select-button" href="#">
-            <span class="visually-hidden">Показать карточки</span>
-          </a>
-          <a class="select-button" href="#">
-            <span class="visually-hidden">Показать списком</span>
-          </a>
+          <div class="display-buttons">
+            <a class="select-button select-button-current" href="#">
+              <span class="visually-hidden">Показать таблицей</span>
+            </a>
+            <a class="select-button" href="#">
+              <span class="visually-hidden">Показать карточки</span>
+            </a>
+            <a class="select-button" href="#">
+              <span class="visually-hidden">Показать списком</span>
+            </a>
+          </div>
         </div>
 
 
@@ -270,6 +272,18 @@
             <option value="50">50</option>
           </select>
         </div>
+      </section>
+
+      <section class="subscribe catalog-subscribe">
+        <h2>Подпишитесь на рассылку</h2>
+        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="visually-hidden" for="subcribe-email">
+            Введите ваш e-mail.
+          </label>
+          <input type="email" name="email" id="subcribe-email" placeholder="Ваш e-mail">
+          <button class="subscribe-button" type="submit">Подписаться</button>
+        </form>
       </section>
     </main>
 
