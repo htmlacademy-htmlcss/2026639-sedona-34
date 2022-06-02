@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* Оставлено до момента,
+когда нам объяснят,
+что с этим классом
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+*/
+
+.page-header {
+  background-color: #ffffff;
+}
+
+.navigation-link {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  text-decoration: none;
+}
+
+.search-button {
+  background: url("../images/search.svg") no-repeat;
+}
+
+.favorites-button {
+  background: url("../images/favorites.svg") no-repeat;
+}
+
+.favorites-counter {
+  font-weight: 400;
+  font-size: 10px;
+  letter-spacing: -0.1em;
+  color: #ffffff;
+  background-color: #7db54f;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.booking-button {
+  width: 160px;
+  height: 37px;
+  border-radius: 4px;
+  background-color: #756157;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: none;
+}
+
+.subscribe-input {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.subscribe-button {
+  background-color: #82b3d3;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  border-radius: 0px 10px 10px 0px;
+  border: none;
+}
+
+.footer-social-item:nth-child(1) .social-button {
+  background: url("../images/vk-logo.svg") no-repeat;
+}
+
+.footer-social-item:nth-child(2) .social-button {
+  background: url("../images/tg-logo.svg") no-repeat;
+}
+
+.footer-social-item:nth-child(3) .social-button {
+  background: url("../images/yt-logo.svg") no-repeat;
+}
+
+.footer-phone {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  font-style: normal;
+  color: #000000;
+}

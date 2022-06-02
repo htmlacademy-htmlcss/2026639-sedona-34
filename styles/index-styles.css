@@ -1,0 +1,114 @@
+.welcome-container {
+  background-color: #334551;
+  background-image: url("../images/index/welcome-background.jpg");
+  background-size: 1200px 485px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about-container {
+  background-color: #ffffff;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.about-title, .subscribe-title, .find-hotel-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.advantages-title, .features-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantages-number, .advantages-description, .features-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.features-title {
+  padding: 0px;
+  margin: 0px;
+  padding-top: 182px;
+}
+
+.features-description {
+  margin-top: 30px;
+}
+
+.dark-colored-item {
+  background-color: #82B3D3;
+  color: #ffffff;
+}
+
+.light-colored-item {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.medium-colored-item {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.features-item:nth-child(1) {
+  background-image: url("../images/index/accomodation-icon.svg");
+  background-size: 75px 72px;
+  background-repeat: no-repeat;
+  background-position: center 80px;
+}
+
+.features-item:nth-child(2) {
+  background-image: url("../images/index/food-icon.svg");
+  background-size: 74px 70px;
+  background-repeat: no-repeat;
+  background-position: center 81px;
+}
+
+.features-item:nth-child(3) {
+  background-image: url("../images/index/souvenires-icon.svg");
+  background-size: 64px 76px;
+  background-repeat: no-repeat;
+  background-position: center 78px;
+}
+
+.find-hotel {
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.find-hotel-description, .subscribe-description {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.find-hotel-link {
+  width: 574px;
+  height: 60px;
+  border-radius: 4px;
+  background-color: #756157;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.subscribe {
+  background-color: #4a6e80;
+  color: #ffffff;
+  text-align: center;
+  background-image: url("../images/index/subscribe-background.jpg");
+  background-size: 1200px 411px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
