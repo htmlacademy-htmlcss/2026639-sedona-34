@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Гостиницы Седоны</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/catalog-styles.css">
     <base href="https://htmlacademy-htmlcss.github.io/2026639-sedona-34/4/">
 </head>
 
@@ -47,9 +48,9 @@
     </header>
 
     <main class="main-catalog">
-      <div class="header-filter-container">
-        <header class="catalog-header">
-          <h1>Гостиницы Седоны</h1>
+      <div class="head-filter-container">
+        <div class="catalog-head">
+          <h1 class="catalog-title">Гостиницы Седоны</h1>
 
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
@@ -61,7 +62,7 @@
               <a class="breadcrumbs-link">Гостиницы</a>
             </li>
           </ul>
-        </header>
+        </div>
 
         <section class="filter-set">
           <h2 class="visually-hidden">Фильтры для поиска гостиниц.</h2>
@@ -275,14 +276,14 @@
         </div>
       </section>
 
-      <section class="subscribe catalog-subscribe">
-        <h2>Подпишитесь на рассылку</h2>
-        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <section class="subscribe">
+        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+        <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="subcribe-email">
             Введите ваш e-mail.
           </label>
-          <input type="email" name="email" id="subcribe-email" placeholder="Ваш e-mail">
+          <input class="subscribe-input" type="email" name="email" id="subcribe-email" placeholder="Ваш e-mail">
           <button class="subscribe-button" type="submit">Подписаться</button>
         </form>
       </section>
