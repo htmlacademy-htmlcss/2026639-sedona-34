@@ -1,0 +1,231 @@
+.head-filter-container {
+  background-color: #3a6488;
+  color: #ffffff;
+  background-image: url("../images/catalog/filter-background.jpg");
+  background-size: 1200px 403px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.catalog-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.breadcrumbs {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.breadcrumbs-item:nth-child(1) {
+  background: url("../images/catalog/breadcrumbs-home.svg") no-repeat;
+}
+
+.breadcrumbs-item:not(:nth-of-type(1)) {
+  list-style-image: url("../images/catalog/breadcrumbs-marker.svg");
+}
+
+.filter-set {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.catalog-filter-infrastructure-item, .catalog-filter-type-item {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.apply-filter-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #82b3d3;
+  border: none;
+  border-radius: 4px;
+  width: 160px;
+  height: 48px;
+}
+
+.reset-filter-button {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  border-radius: 4px;
+  width: 160px;
+  height: 48px;
+}
+
+.filter-result {
+  background-color: #ffffff;
+}
+
+.select-control, .select-quantity {
+  font-family: 'PT Sans';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  background: url("../images/catalog/sort-arrow.svg") no-repeat;
+  background-position: 258px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 290px;
+  height: 49px;
+  padding-left: 20px;
+}
+
+.select-button {
+  width: 48px;
+  height: 48px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+}
+
+.select-button-current {
+  border: 2px solid #000000;
+}
+
+.select-button:nth-child(1) {
+  background-image: url("../images/catalog/table–icon.svg");
+  background-size: 16px 14px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.select-button:nth-child(2) {
+  background-image: url("../images/catalog/slideshow–icon.svg");
+  background-size: 16px 14px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.select-button:nth-child(3) {
+  background-image: url("../images/catalog/list-icon.svg");
+  background-size: 16px 14px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.result-item-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.result-item-type, .result-item-price {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.result-item-button, .to-favorites-button {
+  border-radius: 4px;
+  width: 140px;
+  height: 37px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: none;
+}
+
+.result-item-button {
+  background-color: #756157;
+  padding: 15px;
+  padding-top: 9px;
+  padding-bottom: 8px;
+}
+
+.to-favorites-button {
+  background-color: #82b3d3;
+}
+
+.star-item {
+  width: 18px;
+  height: 17px;
+  background-image: url("../images/catalog/star.svg");
+}
+
+.rating {
+  background-color: #F2F2F2;
+  border-radius: 4px;
+  width: 140px;
+  height: 37px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333333;
+  text-transform: uppercase;
+  border: none;
+  font-size: 16px;
+}
+
+.pagination-item {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  width: 60px;
+  height: 60px;
+  background-color: #82b3d3;
+  text-align: center;
+}
+
+.pagination-current {
+  background-color: #f2f2f2;
+}
+
+.pagination-current .pagination-link {
+  color: #000000;
+}
+
+.pagination-link {
+  color: #ffffff;
+}
+
+.result-quantity {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.select-quantity {
+  width: 160px;
+  height: 49px;
+  background-position: 128px;
+  padding-left: 20px;
+}
+
+.subscribe {
+  background-color: inherit;
+  color: #000000;
+  text-align: center;
+
+}
+
+.subscribe-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.subscribe-description {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+}
