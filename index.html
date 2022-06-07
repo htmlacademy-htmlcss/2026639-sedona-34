@@ -9,7 +9,7 @@
 
   <body>
     <header class="page-header">
-      <img src="images/logo.svg" width="139" height="70" alt="Логотип города Седона.">
+      <img class="header-logo" src="images/logo.svg" width="139" height="70" alt="Логотип города Седона.">
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item current">
@@ -44,7 +44,7 @@
       </nav>
     </header>
 
-    <main class="main-index">
+    <main class="main-container main-index">
       <section class="about" id="about">
         <h1 class="visually-hidden">Седона.</h1>
         <div class="welcome-container">
@@ -59,7 +59,7 @@
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества Седоны.</h2>
         <ul class="advantages-list">
-          <li class="advantages-item">
+          <li class="advantages-item true-city">
             <div class="dark-colored-item">
               <h3 class="advantages-title">Настоящий городок</h3>
               <p class="advantages-number">—&nbsp;№1&nbsp;—</p>
@@ -82,7 +82,7 @@
               </li>
             </ul>
           </li>
-          <li class="advantages-item">
+          <li class="advantages-item devil-bridge">
             <div class="dark-colored-item">
               <h3 class="advantages-title">Там есть мост дьявола</h3>
               <p class="advantages-number">—&nbsp;№2&nbsp;—</p>
@@ -130,31 +130,33 @@
 
     <footer class="page-footer">
       <h2 class="visually-hidden">Связь с нами</h2>
-      <ul class="footer-social-list">
-        <li class="footer-social-item">
-          <a class="social-button" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">ВКонтакте</span>
+      <div class="footer-container">
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a class="social-button" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">ВКонтакте</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="social-button" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Telegram</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="social-button" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">YouTube</span>
+            </a>
+          </li>
+        </ul>
+        <address class="footer-address">
+          <a class="footer-phone" href="tel:+78128121212">
+            +7 (812) 812-12-12
           </a>
-        </li>
-        <li class="footer-social-item">
-          <a class="social-button" href="https://t.me/htmlacademy">
-            <span class="visually-hidden">Telegram</span>
-          </a>
-        </li>
-        <li class="footer-social-item">
-          <a class="social-button" href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden">YouTube</span>
-          </a>
-        </li>
-      </ul>
-      <address class="footer-address">
-        <a class="footer-phone" href="tel:+78128121212">
-          +7 (812) 812-12-12
+        </address>
+        <a class="academy-logo" href="https://htmlacademy.ru/">
+          <img src="images/academy-logo.svg" width="115" height="33" alt="HTML Academy.">
         </a>
-      </address>
-      <a class="academy-logo" href="https://htmlacademy.ru/">
-        <img src="images/academy-logo.svg" width="115" height="33" alt="HTML Academy.">
-      </a>
+      </div>
     </footer>
   </body>
 </html>
