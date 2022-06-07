@@ -1,0 +1,230 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+html {
+  height: 100%;
+  background-color: #e5e5e5;
+}
+
+body {
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  width: 1200px;
+  font-family: "PT Sans", sans-serif;
+  background-color: #ffffff;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* Оставлено до момента,
+когда нам объяснят,
+что с этим классом
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+*/
+
+.visually-hidden {
+  visibility: hidden;
+}
+
+.page-header {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0px 70px;
+  background-color: #ffffff;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navigation-list {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  width: 440px;
+}
+
+.navigation-user {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 305px;
+}
+
+.header-logo {
+  margin-right: 47px;
+}
+
+.navigation-link {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  text-decoration: none;
+
+}
+
+.search-button {
+  background: url("../images/search.svg") no-repeat;
+}
+
+.favorites-button {
+  background: url("../images/favorites.svg") no-repeat;
+}
+
+.favorites-counter {
+  font-weight: 400;
+  font-size: 10px;
+  letter-spacing: -0.1em;
+  color: #ffffff;
+  background-color: #7db54f;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.booking-button {
+  width: 160px;
+  height: 37px;
+  border-radius: 4px;
+  background-color: #756157;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: none;
+}
+
+.subscribe {
+  padding-top: 94px;
+  padding-right: 200px;
+  padding-bottom: 94px;
+  padding-left: 200px;
+}
+
+.subscribe-form {
+  display: flex;
+}
+
+.subscribe-input {
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  border-radius: 10px 0px 0px 10px;
+  border: none;
+  padding: 0px;
+  padding-left: 22px;
+  width: 600px;
+  height: 60px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.subscribe-button {
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: #82b3d3;
+  font-family: "PT Sans", sans-serif;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  width: 200px;
+  height: 60px;
+  border-radius: 0px 10px 10px 0px;
+  border: none;
+  padding: 0px;
+}
+
+.footer-container {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  padding-left: 82px;
+  padding-right: 70px;
+  justify-content: space-between;
+}
+
+.footer-social-list {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0px;
+  padding: 0px;
+  max-width: 168px;
+  margin-right: 250px;
+}
+
+.footer-social-item:not(:last-child) {
+  margin-right: 27px;
+}
+
+.footer-social-item:nth-child(1) .social-button {
+  background: url("../images/vk-logo.svg") no-repeat;
+}
+
+.footer-social-item:nth-child(2) .social-button {
+  background: url("../images/tg-logo.svg") no-repeat;
+}
+
+.footer-social-item:nth-child(3) .social-button {
+  background: url("../images/yt-logo.svg") no-repeat;
+}
+
+.footer-address {
+  margin-right: 236px;
+}
+
+.footer-phone {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  font-style: normal;
+  color: #000000;
+}
