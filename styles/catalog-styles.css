@@ -122,7 +122,7 @@
 .display-control {
   display: flex;
   align-items: center;
-   margin-bottom: 56px;
+  margin-bottom: 56px;
 }
 
 .filter-result-title {
