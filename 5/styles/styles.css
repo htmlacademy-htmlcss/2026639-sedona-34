@@ -138,10 +138,7 @@ li {
 }
 
 .subscribe {
-  padding-top: 94px;
-  padding-right: 200px;
-  padding-bottom: 94px;
-  padding-left: 200px;
+  padding: 94px 200px 94px 200px;
 }
 
 .subscribe-form {
