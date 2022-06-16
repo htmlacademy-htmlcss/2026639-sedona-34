@@ -4,6 +4,8 @@
   background-size: 1200px 485px;
   background-repeat: no-repeat;
   background-position: center;
+  padding-top: 51px;
+  padding-bottom: 83px;
 }
 
 .welcome-title {
@@ -17,6 +19,8 @@
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+  padding-top: 63px;
+  padding-bottom: 90px;
 }
 
 .about-title, .subscribe-title, .find-hotel-title {
@@ -24,13 +28,29 @@
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 .advantages-list {
   display: grid;
   grid-template-columns: 400px 400px 400px;
+  grid-template-rows: auto 384px 384px;
   padding: 0px;
   margin: 0px;
+  list-style-type: none;
+}
+
+.advantages-item {
+  text-align: center;
+}
+
+.advantages-title {
+  margin-top: 92px;
+  margin-bottom: 30px;
+}
+
+.advantages-number {
+  margin-bottom: 30px;
 }
 
 .advantages-item.true-city {
@@ -65,10 +85,13 @@
   display: flex;
   margin: 0px;
   padding: 0px;
+  list-style-type: none;
 }
 
 .features-item {
+  box-sizing: border-box;
   width: 400px;
+  height: 384px;
 }
 
 .features-title {
@@ -77,8 +100,13 @@
   padding-top: 182px;
 }
 
+.advantages-item:nth-child(n+3) .advantages-title {
+  margin-top: 103px;
+}
+
 .features-description {
   margin-top: 30px;
+  padding: 0px;
 }
 
 .dark-colored-item {
@@ -119,24 +147,46 @@
 .find-hotel {
   background-color: #ffffff;
   text-align: center;
+  padding-top: 91px;
+  padding-bottom: 93px;
 }
 
-.find-hotel-description, .subscribe-description {
+.find-hotel-title {
+  display: block;
+  margin-bottom: 29px;
+}
+
+.find-hotel-description {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
+  margin: 0px;
+  margin-bottom: 56px;
+}
+
+.subscribe-description {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  margin: 0px;
+  margin-bottom: 46px;
 }
 
 .find-hotel-link {
+  display: block;
+  box-sizing: border-box;
   width: 574px;
   height: 60px;
   border-radius: 4px;
   background-color: #756157;
   font-weight: 700;
   font-size: 20px;
-  line-height: 36px;
+  line-height: 60px;
   color: #ffffff;
   text-transform: uppercase;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .subscribe {
@@ -147,4 +197,11 @@
   background-size: 1200px 411px;
   background-repeat: no-repeat;
   background-position: center;
+  padding: 94px auto;
+}
+
+.subscribe-title {
+  display: block;
+  margin: 0px;
+  margin-bottom: 29px;
 }
