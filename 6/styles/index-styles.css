@@ -1,16 +1,26 @@
 .welcome-container {
+  box-sizing: border-box;
   background-color: #334551;
   background-image: url("../images/index/welcome-background.jpg");
   background-size: 1200px 485px;
   background-repeat: no-repeat;
   background-position: center;
   padding-top: 51px;
-  padding-bottom: 83px;
+  padding-bottom: 82px;
+}
+
+.welcome-title-wrapper {
+  width: 458px;
+  height: 352px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .welcome-title {
-  display: block;
-  margin: 0px auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .about-container {
@@ -151,8 +161,7 @@
   padding-bottom: 93px;
 }
 
-.find-hotel-title {
-  display: block;
+.find-hotel-title-wrapper {
   margin-bottom: 29px;
 }
 
@@ -173,10 +182,6 @@
 }
 
 .find-hotel-link {
-  display: block;
-  box-sizing: border-box;
-  width: 574px;
-  height: 60px;
   border-radius: 4px;
   background-color: #756157;
   font-weight: 700;
@@ -185,8 +190,7 @@
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 18px 149px;
 }
 
 .subscribe {
@@ -197,11 +201,11 @@
   background-size: 1200px 411px;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 94px auto;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .subscribe-title {
-  display: block;
   margin: 0px;
   margin-bottom: 29px;
 }
