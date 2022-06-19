@@ -35,17 +35,6 @@ body {
   flex-grow: 1;
 }
 
-a {
-  text-decoration: none;
-}
-
-li {
-  list-style: none;
-}
-
-/* Оставлено до момента,
-когда нам объяснят,
-что с этим классом
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -53,15 +42,8 @@ li {
   margin: -1px;
   border: 0;
   padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-*/
-
-.visually-hidden {
-  visibility: hidden;
 }
 
 .page-header {
@@ -69,6 +51,7 @@ li {
   justify-content: flex-start;
   padding: 0px 70px;
   background-color: #ffffff;
+  min-height: 65px;
 }
 
 .navigation {
@@ -81,7 +64,10 @@ li {
   display: flex;
   margin: 0px;
   padding: 0px;
-  width: 440px;
+  margin-left: 186px;
+  width: 508px;
+  list-style: none;
+  flex-wrap: wrap;
 }
 
 .navigation-user {
@@ -92,28 +78,56 @@ li {
 
 .header-logo {
   margin-right: 47px;
+  z-index: 1;
+  position: absolute;
+}
+
+.navigation-item {
+  padding: 0px 17px;
 }
 
 .navigation-link {
+  display: block;
+  padding: 20px 0px;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
   color: #000000;
   text-decoration: none;
+}
 
+.navigation-user .navigation-item {
+  padding: 0px 0px;
+  height: 66px;
+  align-content: flex-end;
+}
+
+.navigation-user .navigation-link {
+  display: block;
+  min-width: 42px;
+  height: 66px;
+}
+
+.favorites-button {
+  margin-right: 20px;
 }
 
 .search-button {
   background: url("../images/search.svg") no-repeat;
+  box-sizing: border-box; /* Добавлено для центрирования */
+  background-position: 50% 50%;
 }
 
 .favorites-button {
   background: url("../images/favorites.svg") no-repeat;
+  box-sizing: border-box; /* Добавлено для центрирования */
+  background-position: 50% 50%;
 }
 
 .favorites-counter {
   font-weight: 400;
   font-size: 10px;
+  line-height: 20px;
   letter-spacing: -0.1em;
   color: #ffffff;
   background-color: #7db54f;
@@ -122,6 +136,9 @@ li {
   height: 20px;
   display: inline-block;
   border-radius: 50%;
+  position: relative;
+  top: -71px;
+  left: 25px;
 }
 
 .booking-button {
@@ -131,10 +148,12 @@ li {
   background-color: #756157;
   font-weight: 700;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 37px;
   color: #ffffff;
   text-transform: uppercase;
   border: none;
+  margin-top: 14px;
+  margin-bottom: 14px;
 }
 
 .subscribe {
@@ -146,7 +165,6 @@ li {
 }
 
 .subscribe-input {
-  display: inline-block;
   box-sizing: border-box;
   background-color: #f2f2f2;
   font-family: "PT Sans", sans-serif;
@@ -164,14 +182,13 @@ li {
 }
 
 .subscribe-button {
-  display: inline-block;
   box-sizing: border-box;
   background-color: #82b3d3;
   font-family: "PT Sans", sans-serif;
   color: #ffffff;
   font-weight: 700;
   font-size: 20px;
-  line-height: 36px;
+  line-height: 60px;
   text-transform: uppercase;
   width: 200px;
   height: 60px;
@@ -180,42 +197,57 @@ li {
   padding: 0px;
 }
 
+.page-footer {
+  min-height: 120px;
+}
+
 .footer-container {
   display: flex;
   margin: 0px;
-  padding: 0px;
+  padding-top: 45px;
+  padding-bottom: 35px;
   padding-left: 82px;
   padding-right: 70px;
   justify-content: space-between;
+  align-items: center;
 }
 
 .footer-social-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
+  align-items: center;
   margin: 0px;
   padding: 0px;
-  max-width: 168px;
-  margin-right: 250px;
+  max-width: 188px;
+  margin-right: auto;
+  list-style-type: none;
 }
 
-.footer-social-item:not(:last-child) {
-  margin-right: 27px;
+.social-button {
+  display: block;
+  min-width: 47px;
+  min-height: 40px;
 }
 
 .footer-social-item:nth-child(1) .social-button {
   background: url("../images/vk-logo.svg") no-repeat;
+  background-position: 50% 50%;
 }
 
 .footer-social-item:nth-child(2) .social-button {
   background: url("../images/tg-logo.svg") no-repeat;
+  background-position: 50% 50%;
 }
 
 .footer-social-item:nth-child(3) .social-button {
   background: url("../images/yt-logo.svg") no-repeat;
+  background-position: 50% 50%;
 }
 
 .footer-address {
   margin-right: 236px;
+  padding: 0px;
 }
 
 .footer-phone {
@@ -224,4 +256,10 @@ li {
   line-height: 40px;
   font-style: normal;
   color: #000000;
+  text-decoration: none;
+}
+
+.academy-logo {
+  line-height: 0px;
+  padding: 0px;
 }
