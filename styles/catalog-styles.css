@@ -20,6 +20,8 @@
 
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
   margin: 0px;
   padding: 0px;
   margin-bottom: 40px;
@@ -27,12 +29,13 @@
   font-size: 16px;
   line-height: 21px;
   list-style-type: none;
+  list-style-position: inside;
 }
 
 .breadcrumbs-item {
   padding: 0px;
   margin: 0px;
-  margin-right: 25px;
+  margin-right: 10px;
   align-content: center;
   box-sizing: border-box;
 }
@@ -215,20 +218,43 @@
   flex-wrap: wrap;
   padding: 0px;
   margin: 0px;
+  margin-bottom: 66px;
   list-style-type: none;
 }
 
 .result-item {
+  display: grid;
   box-sizing: border-box;
+  grid-template-columns: 140px 140px;
+  grid-template-areas:
+  "image image"
+  "title title"
+  "type price"
+  "more to-favorites"
+  "star-rating rating";
+  grid-column-gap: 20px;
+  grid-row-gap: 16px;
   padding: 20px;
   margin: 0px;
   width: 340px;
 }
 
-.result-item-link {
+.result-item-image-link {
+  grid-area: image;
   padding: 0px;
   margin: 0px;
   text-decoration: none;
+}
+
+.result-item-title-link {
+  grid-area: title;
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+}
+
+.result-item-image {
+  object-fit: contain;
 }
 
 .result-item-title {
@@ -237,6 +263,8 @@
   line-height: 28px;
   color: #000000;
   width: 300px;
+  padding: 0px;
+  margin: 0px;
 }
 
 .result-item-type, .result-item-price {
@@ -244,30 +272,50 @@
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  padding: 0px;
+  margin: 0px;
+}
+
+.result-item-type {
+  grid-area: type;
+}
+
+.result-item-price{
+  grid-area: price;
 }
 
 .result-item-button, .to-favorites-button {
   border-radius: 4px;
-  width: 140px;
-  height: 37px;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
   text-transform: uppercase;
   border: none;
-  text-decoration: none;
 }
 
 .result-item-button {
+  grid-area: more;
+  text-align: center;
+  text-decoration: none;
+  align-self: center;
   background-color: #756157;
-  padding: 15px;
+  margin: 0px;
   padding-top: 9px;
   padding-bottom: 8px;
 }
 
 .to-favorites-button {
+  grid-area: to-favorites;
   background-color: #82b3d3;
+  min-height: 37px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.star-rating-container {
+  grid-area: star-rating;
+  align-self: center;
 }
 
 .star-rating-list {
@@ -275,26 +323,32 @@
   margin: 0px;
   display: flex;
   list-style-type: none;
+  align-content: center;
 }
 
 .star-item {
   width: 18px;
   height: 17px;
   background-image: url("../images/catalog/star.svg");
+  margin-right: 6px;
 }
 
 .rating {
+  grid-area: rating;
   background-color: #F2F2F2;
   border-radius: 4px;
   width: 140px;
-  height: 37px;
+  min-height: 37px;
   font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 37px;
+  text-align: center;
   color: #333333;
   text-transform: uppercase;
   border: none;
   font-size: 16px;
+  margin: 0px;
+  padding: 0px;
 }
 
 .pagination-display-control {
