@@ -200,7 +200,8 @@
   background-image: url("../images/index/subscribe-background.jpg");
   background-size: 1200px 411px;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
+  background-size: cover;
   padding-top: 94px;
   padding-bottom: 94px;
 }

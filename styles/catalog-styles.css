@@ -40,14 +40,41 @@
   box-sizing: border-box;
 }
 
-.breadcrumbs-item:nth-child(1) .breadcrumbs-link {
-  display: block;
-  padding: 0px;
-  margin: 0px;
-  background: url("../images/catalog/breadcrumbs-home.svg") no-repeat;
-  min-height: 12px;
-  min-width: 12px;
-  margin-top: 3px;
+.breadcrumbs-link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.home-icon {
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  margin: auto;
+  margin-top: 2px;
+}
+
+.breadcrumbs-link:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.breadcrumbs-link:focus {
+  border: 3px solid #83b3d3;
+  color: #ffffff;
+}
+
+.breadcrumbs-link:visited {
+  color: #ffffff;
+}
+
+.breadcrumbs-current .breadcrumbs-link:hover,
+.breadcrumbs-current .breadcrumbs-link:focus,
+.breadcrumbs-current .breadcrumbs-link:active {
+  color: #ffffff;
 }
 
 .breadcrumbs-item:not(:nth-of-type(1)) {
@@ -116,6 +143,7 @@
   border-radius: 4px;
   width: 160px;
   height: 48px;
+  cursor: pointer;
 }
 
 .reset-filter-button {
@@ -128,6 +156,20 @@
   margin: 0px;
   margin-top: 20px;
   padding-bottom: 0px;
+  cursor: pointer;
+}
+
+.reset-filter-button:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.reset-filter-button:focus {
+  color: #ffffff;
+  border: 3px solid #83b3d3;
+}
+
+.reset-filter-button:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .filter-result {
@@ -168,6 +210,7 @@
   margin: 0px;
   margin-left: auto;
   margin-right: 78px;
+  cursor: pointer;
 }
 
 .display-buttons {
@@ -189,6 +232,15 @@
 
 .select-button-current {
   border: 2px solid #000000;
+}
+
+.select-button:hover,
+.select-button:active {
+  border-color: #000;
+}
+
+.select-button:focus {
+  border-color: #68A2CA;
 }
 
 .select-button:nth-child(1) {
@@ -218,8 +270,10 @@
   flex-wrap: wrap;
   padding: 0px;
   margin: 0px;
-  margin-bottom: 66px;
   list-style-type: none;
+  padding-bottom: 66px;
+  margin-bottom: 33px;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .result-item {
@@ -292,6 +346,7 @@
   color: #ffffff;
   text-transform: uppercase;
   border: none;
+  cursor: pointer;
 }
 
 .result-item-button {
@@ -313,6 +368,46 @@
   padding: 0px;
 }
 
+.to-favorites-button:hover,
+.to-favorites-button:focus,
+.apply-filter-button:hover,
+.apply-filter-button:focus,
+.pagination-link:hover,
+.pagination-link:focus {
+  background-color: #68a2ca;
+}
+
+.to-favorites-button:active,
+.apply-filter-button:active,
+.pagination-link:active {
+  background-color: #82b3d3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.to-favorites-button:disabled,
+.apply-filter-button:disabled,
+.pagination-link:disabled {
+  background-color: #e5e5e5;
+}
+
+.already-favorites {
+  background-color: #7db54f;
+}
+
+.already-favorites:hover,
+.already-favorites:focus {
+  background-color: #6c9e42;
+}
+
+.already-favorites:active {
+  background-color: #7db54f;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.already-favorites:disabled {
+  background-color: #e5e5e5;
+}
+
 .star-rating-container {
   grid-area: star-rating;
   align-self: center;
@@ -331,6 +426,17 @@
   height: 17px;
   background-image: url("../images/catalog/star.svg");
   margin-right: 6px;
+}
+
+.star-item.unset {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .rating {
@@ -370,7 +476,6 @@
   line-height: 36px;
   width: 60px;
   height: 60px;
-  background-color: #82b3d3;
   text-align: center;
   border-radius: 4px;
   padding: 0px;
@@ -378,21 +483,27 @@
   margin-right: 8px;
 }
 
-.pagination-current {
-  background-color: #f2f2f2;
-}
-
-.pagination-current .pagination-link {
-  color: #000000;
-}
-
 .pagination-link {
   display: block;
   color: #ffffff;
+  background-color: #82b3d3;
   text-decoration: none;
   width: 60px;
   height: 60px;
   line-height: 60px;
+  border-radius: 4px;
+}
+
+.pagination-current .pagination-link,
+.pagination-current .pagination-link:hover,
+.pagination-current .pagination-link:focus,
+.pagination-current .pagination-link:active {
+  color: #000000;
+  background-color: #f2f2f2;
+}
+
+.pagination-link:disabled {
+  background-color: #e5e5e5;
 }
 
 .select-quantity-label {
@@ -410,6 +521,7 @@
   height: 49px;
   background-position: 128px;
   margin: 0px;
+  cursor: pointer;
 }
 
 .subscribe {
