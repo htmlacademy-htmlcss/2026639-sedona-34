@@ -1,12 +1,27 @@
 .welcome-container {
+  position: relative;
   box-sizing: border-box;
   background-color: #334551;
   background-image: url("../images/index/welcome-background.jpg");
   background-size: 1200px 485px;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   padding-top: 51px;
   padding-bottom: 82px;
+}
+
+.welcome-container::before {
+  position: absolute;
+  content: "";
+  background-image: url("../images/index/welcome-divider.svg");
+  background-repeat: no-repeat;
+  bottom: 0px;
+  left: auto;
+  right: auto;
+  height: 57px;
+  width: 1200px;
+  z-index: 1;
 }
 
 .welcome-title-wrapper {
