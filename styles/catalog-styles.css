@@ -60,11 +60,13 @@
 
 .breadcrumbs-link:active {
   color: rgba(255, 255, 255, 0.3);
+  border: none;
 }
 
 .breadcrumbs-link:focus {
   border: 3px solid #83b3d3;
   color: #ffffff;
+  border: none;
 }
 
 .breadcrumbs-link:visited {
@@ -168,10 +170,12 @@
 .reset-filter-button:focus {
   color: #ffffff;
   border: 3px solid #83b3d3;
+  border: none;
 }
 
 .reset-filter-button:active {
   color: rgba(255, 255, 255, 0.3);
+  border: none;
 }
 
 .filter-result {

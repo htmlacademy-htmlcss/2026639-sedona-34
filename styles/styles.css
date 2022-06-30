@@ -87,19 +87,36 @@ body {
   padding: 0px 17px;
 }
 
-.navigation-item.current .navigation-link {
+.navigation-item.current .navigation-link::before {
   border-bottom: 2px solid #756257;
   border-spacing: 2px;
+  content: "";
+  position: absolute;
+  top: auto;
+  bottom: -17px;
+  width: 100%;
 }
 
 .navigation-link {
   display: block;
-  padding: 20px 0px;
+  padding: 5px 0px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
   color: #000000;
   text-decoration: none;
+  position: relative;
+}
+
+.navigation-link:hover,
+.navigation-link:focus {
+  color: #756157;
+}
+
+.navigation-link:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .navigation-user .navigation-item {
@@ -111,7 +128,9 @@ body {
 .navigation-user .navigation-link {
   display: block;
   min-width: 42px;
-  height: 66px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  height: 40px;
 }
 
 .favorites-button {
@@ -119,15 +138,21 @@ body {
 }
 
 .search-button {
-  background: url("../images/search.svg") no-repeat;
-  box-sizing: border-box; /* Добавлено для центрирования */
-  background-position: 50% 50%;
+  box-sizing: border-box;
 }
 
 .favorites-button {
-  background: url("../images/favorites.svg") no-repeat;
-  box-sizing: border-box; /* Добавлено для центрирования */
-  background-position: 50% 50%;
+  box-sizing: border-box;
+}
+
+.search-icon,
+.favorites-icon {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  margin: auto;
 }
 
 .favorites-counter {
@@ -143,8 +168,9 @@ body {
   display: inline-block;
   border-radius: 50%;
   position: relative;
-  top: -71px;
+  top: -58px;
   left: 25px;
+  z-index: 1;
 }
 
 .booking-button {
