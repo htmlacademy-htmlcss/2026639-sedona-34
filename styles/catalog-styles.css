@@ -374,7 +374,6 @@ input[type=number] {
   right: 0px;
 }
 
-
 .filter-button-wrapper {
   display: flex;
   flex-direction: column;
@@ -471,51 +470,75 @@ input[type=number] {
   cursor: pointer;
 }
 
+.select-control:hover,
+.select-control:focus,
+.select-quantity:hover,
+.select-quantity:focus {
+  border-color: #68a2ca;
+  outline: none;
+}
+
+.select-control:active,
+.select-quantity:active {
+  border-color: #3f5e72;
+  outline: none;
+}
+
+.select-control:disabled,
+.select-quantity:disabled {
+  border-color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
+  background: url("../images/catalog/sort-arrow-disabled.svg") no-repeat;
+  background-position: 258px;
+}
+
 .display-buttons {
   display: flex;
 }
 
-.select-button {
+.select-display-button {
   width: 48px;
   height: 48px;
-  border: 2px solid #E5E5E5;
+  border: 2px solid #e5e5e5;
   border-radius: 4px;
   padding: 0px;
   margin: 0px;
 }
 
-.select-button:not(:last-child) {
+.select-display-button:not(:last-child) {
   margin-right: 8px;
 }
 
-.select-button-current {
+.select-display-button-current {
   border: 2px solid #000000;
 }
 
-.select-button:hover,
-.select-button:active {
-  border-color: #000;
+.select-display-button:hover,
+.select-display-button:active {
+  border-color: #000000;
+  outline: none;
 }
 
-.select-button:focus {
-  border-color: #68A2CA;
+.select-display-button:focus {
+  border-color: #68a2ca;
+  outline: none;
 }
 
-.select-button:nth-child(1) {
+.select-display-button:nth-child(1) {
   background-image: url("../images/catalog/table–icon.svg");
   background-size: 16px 14px;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.select-button:nth-child(2) {
+.select-display-button:nth-child(2) {
   background-image: url("../images/catalog/slideshow–icon.svg");
   background-size: 16px 14px;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.select-button:nth-child(3) {
+.select-display-button:nth-child(3) {
   background-image: url("../images/catalog/list-icon.svg");
   background-size: 16px 14px;
   background-repeat: no-repeat;
