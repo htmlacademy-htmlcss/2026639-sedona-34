@@ -446,7 +446,8 @@ input[type=number] {
   margin-right: auto;
 }
 
-.select-control, .select-quantity {
+.select-control,
+.select-quantity {
   font-family: 'PT Sans';
   font-weight: 400;
   font-size: 18px;

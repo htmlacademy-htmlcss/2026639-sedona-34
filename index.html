@@ -224,7 +224,7 @@
               <div class="field-group checkin-field-group">
                 <label class="field-label" for="date-checkin">Дата Заезда:</label>
                 <div class="date-input-wrapper">
-                  <input class="find-hotel-field checkin-field" value="27 апреля 2020" type="text" id="date-checkin" name="date-checkin" placeholder="27 апреля 2020">
+                  <input class="find-hotel-field checkin-field" value="27 апреля 2020" type="text" id="date-checkin" name="date-checkin" placeholder="Укажите дату">
                   <button class="field-calendar-button" type="button" name="checkin-calendar">
                     <span class="visually-hidden">Выбрать дату в календаре.</span>
                     <svg class="calendar-icon" width="15" height="15" viewBox="0 0 15 15" fill="currentColor"
@@ -240,7 +240,7 @@
               <div class="field-group checkout-field-group">
                 <label class="field-label" for="date-checkout">Дата Выезда:</label>
                 <div class="date-input-wrapper">
-                  <input class="find-hotel-field checkout-field" value="1 сентября 2021" type="text" id="date-checkout" name="date-checkout" placeholder="Введите дату выезда">
+                  <input class="find-hotel-field checkout-field" value="1 сентября 2021" type="text" id="date-checkout" name="date-checkout" placeholder="Укажите дату">
                   <button class="field-calendar-button" type="button" name="checkin-calendar">
                     <span class="visually-hidden">Выбрать дату в календаре.</span>
                     <svg class="calendar-icon" width="15" height="15" viewBox="0 0 15 15" fill="currentColor"
@@ -274,7 +274,20 @@
                 </div>
               </div>
               <div class="field-group children-field-group">
-                <label class="field-label" for="children-quantity">Дети:</label>
+                <span class="children-label-wrapper">
+                  <label class="field-label" for="children-quantity">Дети: </label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                      <svg width="1" height="9" viewBox="0 0 1 9" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#a)" fill="#fff"><path d="M0 9h1V3H0v6Zm1-9H0v1h1V0Z"/></g>
+                        <defs><clipPath id="a"><path d="M0 0h1v9H0z"/></clipPath></defs>
+                      </svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </span>
+                </span>
+
                 <div class="quantity-input-wrapper">
                   <button class="children-decrease-button" type="button" name="children-decrease">
                     <span class="visually-hidden">Уменьшить количество.</span>
