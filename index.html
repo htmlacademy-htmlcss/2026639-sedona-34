@@ -206,5 +206,99 @@
         </a>
       </div>
     </footer>
+
+    <!-- Для открытия модального окна удалить класс modal-hide -->
+    <div class="modal-container">
+      <div class="modal modal-find-hotel">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть.</span>
+          <svg class="close-icon" width="13" height="13" viewBox="0 0 13 13" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z"/>
+          </svg>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="find-hotel-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="field-group-container">
+              <div class="field-group checkin-field-group">
+                <label class="field-label" for="date-checkin">Дата Заезда:</label>
+                <div class="date-input-wrapper">
+                  <input class="find-hotel-field checkin-field" value="27 апреля 2020" type="text" id="date-checkin" name="date-checkin" placeholder="27 апреля 2020">
+                  <button class="field-calendar-button" type="button" name="checkin-calendar">
+                    <span class="visually-hidden">Выбрать дату в календаре.</span>
+                    <svg class="calendar-icon" width="15" height="15" viewBox="0 0 15 15" fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.5 10c.3 0 .5-.2.5-.5S5.8 9 5.5 9s-.5.2-.5.5.2.5.5.5Z"/>
+                      <path d="M14 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h13c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h13v7ZM1 6V3h2v2h1V3h7v2h1V3h2v3H1Z"/>
+                      <path d="M7.5 10c.3 0 .5-.2.5-.5S7.8 9 7.5 9s-.5.2-.5.5.2.5.5.5Zm2 0c.3 0 .5-.2.5-.5S9.8 9 9.5 9s-.5.2-.5.5.2.5.5.5Zm-4 1c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Zm-2-1c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5Zm0 1c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Zm4 0c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Zm2 0c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Zm2-1c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Zm0 1c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <span class="checkin-field-message error-message">Мы не можем отправить вас в прошлое.</span>
+              <div class="field-group checkout-field-group">
+                <label class="field-label" for="date-checkout">Дата Выезда:</label>
+                <div class="date-input-wrapper">
+                  <input class="find-hotel-field checkout-field" value="1 сентября 2021" type="text" id="date-checkout" name="date-checkout" placeholder="Введите дату выезда">
+                  <button class="field-calendar-button" type="button" name="checkin-calendar">
+                    <span class="visually-hidden">Выбрать дату в календаре.</span>
+                    <svg class="calendar-icon" width="15" height="15" viewBox="0 0 15 15" fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.5 10c.3 0 .5-.2.5-.5S5.8 9 5.5 9s-.5.2-.5.5.2.5.5.5Z"/>
+                      <path d="M14 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h13c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h13v7ZM1 6V3h2v2h1V3h7v2h1V3h2v3H1Z"/>
+                      <path d="M7.5 10c.3 0 .5-.2.5-.5S7.8 9 7.5 9s-.5.2-.5.5.2.5.5.5Zm2 0c.3 0 .5-.2.5-.5S9.8 9 9.5 9s-.5.2-.5.5.2.5.5.5Zm-4 1c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Zm-2-1c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5Zm0 1c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Zm4 0c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Zm2 0c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Zm2-1c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Zm0 1c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <span class="checkout-field-message success-message">На эти даты есть свободные номера. Пока есть.</span>
+              <div class="field-group adult-field-group">
+                <label class="field-label" for="adult-quantity">Взрослые:</label>
+                <div class="quantity-input-wrapper">
+                  <button class="adult-decrease-button" type="button" name="adult-decrease">
+                    <span class="visually-hidden">Уменьшить количество.</span>
+                    <svg width="13" height="13" viewBox="0 0 13 1" fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0v1h13V0H0Z"/>
+                    </svg>
+                  </button>
+                  <input class="find-hotel-field adult-field" value="2" type="text" id="adult-quantity" name="adult-quantity" placeholder="1">
+                  <button class="adult-increase-button" type="button" name="adult-increase">
+                    <span class="visually-hidden">Увеличить количество.</span>
+                    <svg width="13" height="13" viewBox="0 0 13 13" fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="field-group children-field-group">
+                <label class="field-label" for="children-quantity">Дети:</label>
+                <div class="quantity-input-wrapper">
+                  <button class="children-decrease-button" type="button" name="children-decrease">
+                    <span class="visually-hidden">Уменьшить количество.</span>
+                    <svg width="13" height="13" viewBox="0 0 13 1" fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0v1h13V0H0Z"/>
+                    </svg>
+                  </button>
+                  <input class="find-hotel-field children-field" value="1" type="text" id="children-quantity" name="children-quantity" placeholder="0">
+                  <button class="children-increase-button" type="button" name="children-increase">
+                    <span class="visually-hidden">Увеличить количество.</span>
+                    <svg width="13" height="13" viewBox="0 0 13 13" fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button class="button find-hotel-submit-button" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
+
   </body>
 </html>
