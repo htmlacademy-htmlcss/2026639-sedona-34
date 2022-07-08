@@ -113,6 +113,7 @@ body {
 .navigation-link:hover,
 .navigation-link:focus {
   color: #756157;
+  outline: none;
 }
 
 .navigation-link:active {
@@ -197,6 +198,7 @@ body {
 .result-item-button:hover,
 .result-item-button:focus {
   background-color: #615048;
+  outline: none;
 }
 
 .booking-button:active,
@@ -237,6 +239,22 @@ body {
   -moz-appearance: none;
 }
 
+.subscribe-input:hover {
+  background-color: #e6e6e6;
+}
+
+.subscribe-input:focus {
+  background-color: #e6e6e6;
+  box-shadow: 0 0 0 3px #83b3d3;
+  outline: none;
+}
+
+.subscribe-input:not(:placeholder-shown) {
+  background-color: #ffffff;
+  box-shadow: 0 0 0 2px #000000;
+  outline: none;
+}
+
 .subscribe-button {
   box-sizing: border-box;
   background-color: #82b3d3;
@@ -257,6 +275,7 @@ body {
 .subscribe-button:hover,
 .subscribe-button:focus {
   background-color: #68a2ca;
+  outline: none;
 }
 
 .subscribe-button:active {
@@ -317,6 +336,10 @@ body {
   fill: #68a2ca;
 }
 
+.social-button:focus {
+  outline: none;
+}
+
 .social-button:active .social-icon {
   fill: rgba(104, 162, 202, 0.3)
 }
@@ -338,6 +361,7 @@ body {
 .footer-phone:hover,
 .footer-phone:focus {
   color: #756157;
+  outline: none;
 }
 
 .footer-phone:active {
@@ -355,14 +379,18 @@ body {
   bottom: 0px;
   left: 0px;
   margin: auto;
-  fill: #000;
+  color: #000000;
 }
 
-.academy-icon:hover,
-.academy-icon:focus {
-  fill: #756157;
+.academy-logo:hover .academy-icon,
+.academy-logo:focus .academy-icon {
+  color: #756157;
 }
 
-.academy-icon:active {
-  fill: rgba(117, 97, 87, 0.3);
+.academy-logo:focus {
+  outline: none;
+}
+
+.academy-logo:active .academy-icon {
+  color: rgba(117, 97, 87, 0.3);
 }
