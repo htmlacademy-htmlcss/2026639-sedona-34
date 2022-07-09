@@ -4,14 +4,15 @@
   background-image: url("../images/catalog/filter-background.jpg");
   background-repeat: no-repeat;
   background-position: top;
-  background-size: auto;
-  padding: 35px 70px 70px 70px;
+  background-size: cover;
+  padding: 34px 70px 70px 70px;
 }
 
 .catalog-title {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
+  word-wrap: break-word;
   padding: 0px;
   margin: 0px;
   margin-right: auto;
@@ -23,8 +24,9 @@
   flex-wrap: wrap;
   box-sizing: border-box;
   margin: 0px;
-  padding: 0px;
+  margin-left: 1px;
   margin-bottom: 40px;
+  padding: 0px;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
@@ -43,6 +45,7 @@
 .breadcrumbs-link {
   text-decoration: none;
   color: #ffffff;
+  word-break: break-word;
 }
 
 .home-icon {
@@ -99,7 +102,7 @@
 .catalog-filter-group {
   padding: 0px;
   margin: 0px;
-  margin-right: 70px;
+  margin-right: 72px;
   border: none;
 }
 
@@ -107,6 +110,8 @@
   padding: 0px;
   margin: 0px;
   margin-bottom: 30px;
+  word-wrap: break-word;
+  max-width: 230px;
 }
 
 
@@ -114,6 +119,8 @@
   padding: 0px;
   margin: 0px;
   margin-bottom: 30px;
+  word-wrap: break-word;
+  max-width: 230px;
 }
 
 .catalog-filter-infrastructure-item:last-of-type,
@@ -124,23 +131,29 @@
 .cost-filter {
   margin: 0px;
   margin-left: auto;
-  margin-right: 70px;
+  margin-right: 72px;
 }
 
 .catalog-filter-cost {
   margin-bottom: 34px;
+  word-wrap: break-word;
+  max-width: 300px;
 }
 
 .catalog-filter-infrastructure-list {
   padding: 0px;
   margin: 0px;
   list-style-type: none;
+  max-width: 200px;
+  word-break: break-word;
 }
 
 .catalog-filter-type-list {
   padding: 0px;
   margin: 0px;
   list-style-type: none;
+  max-width: 200px;
+  word-break: break-word;
 }
 
 .catalog-filter-infrastructure-item,
@@ -237,7 +250,7 @@
 
 .range-inputs-wrapper {
   display: flex;
-  margin-bottom: 32px;
+  margin-bottom: 28px;
 }
 
 .range-input {
@@ -245,8 +258,9 @@
   margin: 0px;
   padding: 0px;
   padding-left: 18px;
+  padding-right: 46px;
   width: 144px;
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -327,7 +341,7 @@ input[type=number] {
 .range-scale {
   position: relative;
   height: 4px;
-  width: 288px;
+  width: 287px;
   margin-bottom: 0px;
   background-color: rgba(255, 255, 255, 0.5);
 }
@@ -385,14 +399,19 @@ input[type=number] {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
-  line-height: 48px;
+  line-height: 20px;
   text-transform: uppercase;
   color: #ffffff;
+  word-wrap: break-word;
   background-color: #82b3d3;
+  margin: 0px;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
   border: none;
   border-radius: 4px;
   width: 160px;
-  height: 48px;
+  min-height: 48px;
   cursor: pointer;
 }
 
@@ -403,12 +422,15 @@ input[type=number] {
   line-height: 20px;
   color: #ffffff;
   background-color: transparent;
-  width: 94px;
+  min-width: 94px;
+  max-width: 160px;
   border: none;
   border-radius: 4px;
   margin: 0px;
   margin-top: 20px;
-  padding-bottom: 0px;
+  padding: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
   align-self: center;
   cursor: pointer;
 }
@@ -430,27 +452,29 @@ input[type=number] {
 
 .filter-result {
   background-color: #ffffff;
-  padding: 55px 70px 25px 70px;
+  padding: 56px 71px 18px 72px;
 }
 
 .display-control {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 56px;
 }
 
 .filter-result-title {
   font-size: 30px;
   text-transform: uppercase;
-  line-height: 36px;
+  line-height: 49px;
+  word-wrap: break-word;
   padding: 0px;
   margin: 0px;
   margin-right: auto;
+  max-width: 513px;
 }
 
 .select-control,
 .select-quantity {
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -458,12 +482,12 @@ input[type=number] {
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   background: url("../images/catalog/sort-arrow.svg") no-repeat;
-  background-position: 258px;
+  background-position: 255px;
   -webkit-appearance: none;
   -moz-appearance: none;
   width: 290px;
   height: 49px;
-  padding: 14px 0px 14px 20px;
+  padding: 0px 45px 0px 17px;
 }
 
 .select-control {
@@ -506,6 +530,7 @@ input[type=number] {
   border-radius: 4px;
   padding: 0px;
   margin: 0px;
+  box-sizing: border-box;
 }
 
 .select-display-button:not(:last-child) {
@@ -549,18 +574,18 @@ input[type=number] {
 }
 
 .result-list {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 18px;
   padding: 0px;
   margin: 0px;
   list-style-type: none;
   padding-bottom: 66px;
-  margin-bottom: 33px;
+  margin-bottom: 28px;
   border-bottom: 1px solid #e6e6e6;
 }
 
-.result-item {
+.result-content-wrapper {
   display: grid;
   box-sizing: border-box;
   grid-template-columns: 140px 140px;
@@ -609,12 +634,14 @@ input[type=number] {
 
 .result-item-image {
   object-fit: contain;
+  display: block;
 }
 
 .result-item-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  word-wrap: break-word;
   width: 300px;
   padding: 0px;
   margin: 0px;
@@ -627,6 +654,7 @@ input[type=number] {
   color: #333333;
   padding: 0px;
   margin: 0px;
+  word-wrap: break-word;
 }
 
 .result-item-type {
@@ -658,6 +686,9 @@ input[type=number] {
   margin: 0px;
   padding-top: 9px;
   padding-bottom: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  word-wrap: break-word;
 }
 
 .to-favorites-button {
@@ -666,6 +697,10 @@ input[type=number] {
   min-height: 37px;
   margin: 0px;
   padding: 0px;
+  align-self: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  word-wrap: break-word;
 }
 
 .to-favorites-button:hover,
@@ -718,6 +753,7 @@ input[type=number] {
   padding: 0px;
   margin: 0px;
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   align-content: center;
 }
@@ -741,20 +777,26 @@ input[type=number] {
 }
 
 .rating {
+  display: block;
+  box-sizing: border-box;
   grid-area: rating;
   background-color: #F2F2F2;
   border-radius: 4px;
-  width: 140px;
   min-height: 37px;
   font-weight: 400;
   font-size: 16px;
-  line-height: 37px;
+  line-height: 20px;
   text-align: center;
   color: #333333;
   text-transform: uppercase;
   border: none;
   margin: 0px;
-  padding: 0px;
+  padding-top: 9px;
+  padding-bottom: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  word-wrap: break-word;
+  align-self: center;
 }
 
 .pagination-display-control {
@@ -765,8 +807,10 @@ input[type=number] {
 
 .pagination {
   display: flex;
+  flex-wrap: wrap;
   padding: 0px;
   margin: 0px;
+  max-width: 570px;
   list-style-type: none;
 }
 
@@ -774,13 +818,14 @@ input[type=number] {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  width: 60px;
+  min-width: 60px;
   height: 60px;
   text-align: center;
   border-radius: 4px;
   padding: 0px;
   margin: 0px;
   margin-right: 8px;
+  margin-bottom: 8px;
 }
 
 .pagination-link {
@@ -788,10 +833,12 @@ input[type=number] {
   color: #ffffff;
   background-color: #82b3d3;
   text-decoration: none;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
+  line-height: 36px;
   border-radius: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .pagination-current .pagination-link,
@@ -806,6 +853,11 @@ input[type=number] {
   background-color: #e5e5e5;
 }
 
+.result-quantity-wrapper {
+  align-self: flex-start;
+  margin-top: 6px;
+}
+
 .select-quantity-label {
   font-weight: 400;
   font-size: 18px;
@@ -813,13 +865,13 @@ input[type=number] {
   color: #333333;
   padding: 0px;
   margin: 0px;
-  margin-right: 51px;
+  margin-right: 48px;
 }
 
 .select-quantity {
   width: 160px;
   height: 49px;
-  background-position: 128px;
+  background-position: 125px;
   margin: 0px;
   cursor: pointer;
 }
@@ -828,19 +880,4 @@ input[type=number] {
   background-color: inherit;
   color: #000000;
   text-align: center;
-}
-
-.subscribe-title {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  text-transform: uppercase;
-  margin-bottom: 29px;
-}
-
-.subscribe-description {
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 26px;
-  margin-bottom: 46px;
 }

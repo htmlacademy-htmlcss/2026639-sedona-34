@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -65,7 +65,7 @@ body {
   display: flex;
   margin: 0px;
   padding: 0px;
-  margin-left: 186px;
+  margin-left: 169px;
   width: 508px;
   list-style: none;
   flex-wrap: wrap;
@@ -74,7 +74,8 @@ body {
 .navigation-user {
   display: flex;
   justify-content: flex-end;
-  max-width: 305px;
+  max-width: 350px;
+  margin-left: auto;
 }
 
 .header-logo {
@@ -122,8 +123,9 @@ body {
 
 .navigation-user .navigation-item {
   padding: 0px 0px;
-  height: 66px;
+  min-height: 66px;
   align-content: flex-end;
+  align-self: flex-start;
 }
 
 .navigation-user .navigation-link {
@@ -156,6 +158,10 @@ body {
   margin: auto;
 }
 
+.favorites-description {
+  position: absolute;
+}
+
 .favorites-counter {
   font-weight: 400;
   font-size: 10px;
@@ -169,23 +175,30 @@ body {
   display: inline-block;
   border-radius: 50%;
   position: relative;
-  top: -58px;
-  left: 25px;
+  top: -69px;
+  left: 24px;
   z-index: 1;
 }
 
 .booking-button {
+  box-sizing: border-box;
   font-family: "PT Sans", sans-serif;
-  width: 160px;
-  height: 37px;
+  min-width: 160px;
+  max-width: 200px;
+  min-height: 37px;
   border-radius: 4px;
   background-color: #756157;
   font-weight: 700;
   font-size: 16px;
-  line-height: 37px;
+  line-height: 20px;
   color: #ffffff;
   text-transform: uppercase;
+  word-wrap: break-word;
   border: none;
+  padding: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 0px;
   margin-top: 14px;
   margin-bottom: 14px;
   cursor: pointer;
@@ -218,8 +231,28 @@ body {
   padding: 94px 200px 94px 200px;
 }
 
+.subscribe-title {
+  word-wrap: break-word;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin: 0px;
+  margin-bottom: 29px;
+}
+
+.subscribe-description {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  margin-bottom: 46px;
+  padding-left: 20px;
+  padding-right: 20px;
+  word-wrap: break-word;
+}
+
 .subscribe-form {
-  display: flex;
+  display: inline-flex;
 }
 
 .subscribe-input {
@@ -231,10 +264,12 @@ body {
   line-height: 21px;
   border-radius: 10px 0px 0px 10px;
   border: none;
+  margin: 0px;
   padding: 0px;
   padding-left: 22px;
+  padding-right: 22px;
   width: 600px;
-  height: 60px;
+  min-height: 60px;
   -webkit-appearance: none;
   -moz-appearance: none;
 }
@@ -262,13 +297,17 @@ body {
   color: #ffffff;
   font-weight: 700;
   font-size: 20px;
-  line-height: 60px;
+  line-height: 36px;
   text-transform: uppercase;
+  word-wrap: break-word;
   width: 200px;
-  height: 60px;
+  min-height: 60px;
   border-radius: 0px 10px 10px 0px;
   border: none;
+  margin: 0px;
   padding: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
   cursor: pointer;
 }
 
@@ -293,10 +332,11 @@ body {
 
 .footer-container {
   display: flex;
+  flex-wrap: wrap;
   margin: 0px;
   padding-top: 45px;
   padding-bottom: 35px;
-  padding-left: 82px;
+  padding-left: 70px;
   padding-right: 70px;
   justify-content: space-between;
   align-items: center;
@@ -309,6 +349,7 @@ body {
   align-items: center;
   margin: 0px;
   padding: 0px;
+  min-width: 146px;
   max-width: 188px;
   margin-right: auto;
   list-style-type: none;
@@ -345,8 +386,9 @@ body {
 }
 
 .footer-address {
-  margin-right: 236px;
+  margin-right: auto;
   padding: 0px;
+  text-align: center;
 }
 
 .footer-phone {
